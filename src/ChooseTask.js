@@ -2,6 +2,8 @@ import React from 'react';
 import firebase from './firebase';
 import ShowGoals from './ShowGoals';
 
+//Displays goals and compares users current mood to the requirements of each goal to suggest which is most appropriate.
+
 class ChooseTask extends React.Component {
     constructor(props) {
         super(props)
@@ -75,7 +77,7 @@ class ChooseTask extends React.Component {
         })
     }
 
-
+    //Removes completed tasks from FB also pushes user to add more goals if they are now below 3
     complete = () => {
         const dbRef = firebase.database().ref(this.props.un)
         dbRef.child(this.state.bestOption).remove();
@@ -108,8 +110,8 @@ class ChooseTask extends React.Component {
                     <button onClick={this.submit}>Submit</button>
                 </form>
             )
-        }
-        if (this.state.bestOption !== ''){
+        //This only fires when displaying the user the suggested task... Was looking to add skip button here as well as a stretch goal but ran out of time.
+        }else if (this.state.bestOption !== ''){
             return (
                 <div className="centered">
                     <p>The most suitable task for you currently is:</p>

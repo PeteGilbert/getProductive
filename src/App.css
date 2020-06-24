@@ -8,8 +8,6 @@ body {
   text-align: center;
 }
 
-
-
 .centered {
   display: flex;
   flex-direction: column;
@@ -17,7 +15,7 @@ body {
   justify-content: center;
   min-height: 100vh;
 }
-/* BUTTON STYLING EDITED FROM  https://codepen.io/fossheim/pen/RwPeVKG*/
+/* BUTTON STYLING IDEA TAKEN FROM  https://codepen.io/fossheim/pen/RwPeVKG*/
     button {
       display: block;
       cursor: pointer;
