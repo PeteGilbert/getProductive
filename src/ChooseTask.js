@@ -69,35 +69,11 @@ class ChooseTask extends React.Component {
         })
     }
 
-  
     handleChange = (event) => {
-        console.log(event)
         this.setState({
             [event.target.name]: event.target.value
         })
     }
-
-    // handleChangePhys = (event) => {
-    //     console.log(event)
-    //     this.setState({
-    //         currentPhys: event.target.value
-    //     })
-    // }
-
-    // handleChangeMent = (event) => {
-    //     this.setState({
-    //         currentMent: event.target.value
-    //     })
-    // }
-
-    // handleChangeEnergy = (event) => {
-    //     this.setState({
-    //         currentEnergy: event.target.value
-    //     })
-    // }
-
-
-
 
 
     complete = () => {
@@ -145,6 +121,7 @@ class ChooseTask extends React.Component {
         return (
             <div className="centered">
                 <button onClick={this.showForm}>Choose a task for me!</button>
+                <button name="choosingGoals" onClick={this.props.selectActive}>Add more goals!</button>
                 <ShowGoals un={this.props.un} />
             </div>
 
