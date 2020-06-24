@@ -1,0 +1,12 @@
+Can you use a single on change function for multiple inputs? NewGoals
+Can you combine the repeated HTML in NewGoals?
+
+
+
+
+TODO: 
+ADD FUNCTIONALITY FOR AFTER ITEMS ARE MARKED AS COMPLETE
+ADD ACCESSABILITY
+MAKE DRYER
+
+FIX STYLING FOR LARGE NUMBER OF GOALS
