@@ -65,10 +65,12 @@ class ChooseTask extends React.Component {
                 currentBestName = obj.name
             }
             winner = currentBestName
+            console.log('loop')
         })
         this.setState ({
             bestOption: winner
         })
+        console.log('done')
     }
 
     handleChange = (event) => {
